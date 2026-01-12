@@ -1,18 +1,18 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# JVS Image ED
 
-## Folder Structure
+JVS Image ED is a simple tool to obfuscate images so that it is unviewable. It will output a raw binary file which when opened will show garbage text.
 
-The workspace contains two folders by default, where:
+The file will need to be put through the decoder to view the image.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+You should create a `.jvsei` file only. as the Encoder and Decoder check the file type.
+## Usage/Examples
+Write this code in any java file and run to encode and decode.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A batch file to run the tool directly via terminal will be provided soon.
+```java
+JVSImage.Encoder.encode("Test.jpg", "Test.jvsei"); // Encode image
+JVSImage.Decoder.decode("Test.jvsei", "Test2.jpg"); // Decode image
+JVSImage.Decoder.view("Test.jvsei"); // Decode and view image. Does not create file.
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
