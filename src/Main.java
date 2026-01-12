@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        JVSImage.Encoder.encode("Test2.jpg", "Test2.jvsei");
-        JVSImage.Decoder.view("Test2.jvsei");
+        JVSImage.Encoder.encode("test-img/Test2.jpg", "test-jvsei/Test2.jvsei");
+        JVSImage.Decoder.decode("test-jvsei/Test2.jvsei", "Test3.jpg");
     }
 }
