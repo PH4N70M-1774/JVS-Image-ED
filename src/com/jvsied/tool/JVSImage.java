@@ -1,4 +1,5 @@
 package com.jvsied.tool;
+
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -15,6 +16,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+//OFFICIAL VERSION: Version 1.0.50
+//RELEASE DATE: 12-01-2026 21:15 IST
 public class JVSImage {
     public static int CURRENT_VERSION = 1;
 
